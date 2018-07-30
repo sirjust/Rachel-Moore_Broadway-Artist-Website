@@ -1,7 +1,24 @@
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+    $("body").css("display", "none");
+    $("body").fadeIn(1000);
+    $("a.page-transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(700, redirectPage);
+    });
+
+    function redirectPage() {
+        window.location = linkLocation;
+        }
+    });
+</script>
+
 <div class="container-fluid nav-top">
     <div class="row">
-        <div class= "col-md-2 media-links">
-            <div class="ml-3">
+        <div class= "col-lg-2 media-links">
+            <div class="ml-3 media-stuff">
                 <a class="navbar-brand" href="https://www.facebook.com/sopranorachelannemoore/">
                     <img class= "icon-link" src="./images/facebook.jpg" alt="">
                 </a>
@@ -10,47 +27,49 @@
                 </a>
             </div>
         </div>		
-        <div class="col-md-8 name-banner text-center">
+        <div class="col-lg-8 name-banner text-center">
             <div class="container">
                 <h1>Rachel Anne Moore</h1>
             </div>
         </div>
-        <div class="col-md-2 language-container">
-            <ul class="row">
-                <li class="nav-item language" href="#">EN</li>
-                <li class="language">&nbsp;|&nbsp;</li>
-                <li class="nav-item language" href="#">DE</li>
-            </ul>
+        <div class="col-lg-2 language-container">
+            <div>
+                <ul class="row">
+                    <li class="nav-item language" href="#">EN</li>
+                    <li class="language">&nbsp;|&nbsp;</li>
+                    <li class="nav-item language" href="#">DE</li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
 
-<nav class="navbar navbar-toggleable-md navbar-light navbar-expand-lg">
+<nav class="navbar navbar-toggleable-sm navbar-light navbar-expand-md">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse col-md-12" id="navbarNav">
+    <div class="collapse navbar-collapse col-sm-12" id="navbarNav">
         <ul class="navbar-nav w-100 nav-justified">
             <li class="nav-item">
-                <a class="nav-link" href=index.html>HOME</a>
+                <a class="nav-link page-transition" href=index.html>HOME</a>
             </li>
             <li class="nav-item">          
-                <a class="nav-link" href="about.html">ABOUT</a>
+                <a class="nav-link page-transition" href="about.html">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="press.html">PRESS</a>
+                <a class="nav-link page-transition" href="press.html">PRESS</a>
             </li>
             <li class="nav-item">
-                <a class= "nav-link" href="photo_gallery.html">GALLERY</a>
+                <a class= "nav-link page-transition" href="photo_gallery.html">GALLERY</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="audio.html">AUDIO</a>
+                <a class="nav-link page-transition" href="audio.html">AUDIO</a>
             </li>
             <li class="nav-item">
-                <a class= "nav-link" href="videos.html">VIDEO</a>
+                <a class= "nav-link page-transition" href="videos.html">VIDEO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT</a>
+                <a class="nav-link page-transition" href="contact.html">CONTACT</a>
             </li>   
         </ul>
     </div>

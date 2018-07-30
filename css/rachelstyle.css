@@ -2,6 +2,8 @@
 =========
 */
 body {
+    /*this is dangerous.. if the visitor has javascript disabled nothing will display.. the reason i have it here now is that there is a flash of content before the fade-in when i have it in the nav section*/
+    display: none;
 	background-color: white;
     margin-top: 10px;
 }
@@ -37,29 +39,51 @@ ul li.nav-item:hover {
     justify-content: center;
 }
 
-@media only screen and (max-width: 500px){
-    .language-container{
+@media only screen and (max-width: 1000px){
+        .icon-link{
+        height: 25px;
+        width: 25px;
+    }
+        .name-banner *{
+        font-size: 32px;
+        /*between 991 and 999 the text goes to the left side*/
+    }
+        .language-container{
+        height: 40px;
+        width: 100px;
         position: absolute;
-        top: 5px;
-        right: 5px;
+        top: 18px;
+        right: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
     }
-    .language{
-        
-    }
-    .media-links{
+        .media-links{
         position: absolute;
         top: 5px;
         left: 5px;
     }
-    .icon-link{
-        height: 25px;
-        width: 25px;
+}
+
+@media only screen and (max-width: 810px){
+
+    .nav-top {
+    padding-bottom: 0px;
     }
+
     .name-banner{
-        margin-top: 50px;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    .name-banner *{
+        font-size: 28px;
     }
 }
     
+@media only screen and (max-width: 450px){
+    .name-banner *{
+        font-size: 22px;
+    }
+}
 .language {
     margin-right: 0;
 }
@@ -183,6 +207,27 @@ PHOTO TRANSITIONS
 
 .photo:hover img {
 	transform: scale(1.1);
+}
+
+/*
+VIDEO STYLE
+*/
+
+.video-container {
+	text-align: center;
+	margin: 15px auto;
+}
+
+.video {
+	position: relative;
+	line-height: 0;
+	margin-bottom: 2em;
+	overflow: hidden;
+	border-radius: 8px;
+	padding: 1px;
+	border: 1px solid #021a40;
+	background-color: #000;
+	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7);
 }
 
 /*
