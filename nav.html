@@ -1,17 +1,14 @@
-<script>
-    $(document).ready(function() {
-    $("body").css("display", "none");
-    $("body").fadeIn(1000);
-    $("a.page-transition").click(function(event){
-        event.preventDefault();
-        linkLocation = this.href;
-        $("body").fadeOut(700, redirectPage);
+<script>$(document).on("click", "a", function () {
+    var newUrl = $(this).attr("href");
+    if (!newUrl || newUrl[0] === "#") {
+        location.hash = newUrl;
+        return;
+    }
+    $("html").fadeOut(700, function () {
+        location = newUrl;
     });
-
-    function redirectPage() {
-        window.location = linkLocation;
-        }
-    });
+    return false;
+});
 </script>
 
 <div class="container-fluid nav-top">
