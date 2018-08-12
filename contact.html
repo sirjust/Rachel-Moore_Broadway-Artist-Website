@@ -31,15 +31,15 @@
                         <div class="photo-container">
                             <img src="images/Hudson.jpg"/>
                         </div>
-                        <p>Danny Prather<br/>Phone: (646)619-8080<br />Email: danny@haanyc.com
-                        </p>
-                        <a href="https://www.facebook.com/sopranorachelannemoore/">Facebook
-                        </a>
-                        <br/>
-                        <a href="https://www.instagram.com/rachelannemooreofficial/?hl=en">Instagram
-                        </a>
+                        <div class="center">
+                            <p>Danny Prather<br/>Phone: (646)619-8080<br />Email: danny@haanyc.com</p>
+                            <a href="https://www.facebook.com/sopranorachelannemoore/" target="_blank">Rachel's Facebook Artist Page
+                            </a>
+                            <br/>
+                            <a href="https://www.instagram.com/rachelannemooreofficial/?hl=en" target="_blank">Rachel's Instagram Handle
+                            </a>
+                        </div>
                     </div>
-
                 </div>
                 <div class="col-md-8">
                     <img src="./images/ContactPic.JPG" class="container_pic1" alt="image">
@@ -47,12 +47,20 @@
             </div>
         </div>
         
-        
         <div>
             <p>Contact Rachel Anne Moore
             </p>
         </div>
         <!-- /biography -->
+        		<!-- footer -->
         <script type="text/javascript" src="js/RachelScript.js"></script>
+        <div id="footer-placeholder">
+        </div>
+        <script>
+            $(function(){
+              $("#footer-placeholder").load("footer.html");
+            });
+        </script>
+		<!-- /footer -->
 	</body>
 </html>

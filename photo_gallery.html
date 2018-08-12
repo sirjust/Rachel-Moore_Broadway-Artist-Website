@@ -27,46 +27,46 @@
         
 <!-- gallery -->
 	   <section id="gallery">
-	   </section>
-<!-- /gallery -->
+
 	
         <!-- Photo Gallery Thumbnails-->
-        <div class="container">
-            <ul class="list-inline flex-container">
-            <!--first thumbnail-->
-                <li class="photo-container photo">
+            <div class="container">
+                <ul class="list-inline flex-container">
+                <!--first thumbnail-->
+                    <li class="photo-container photo">
                         <img src="images/Gallery/1Shani/ShaniThumbnail.jpg" onclick="openModal('myModal1');currentSlide(1, 'myModal1')" class="hover-shadow">
                         <div class= "credit">Shani</div>
-                </li>
-            <!--second thumbnail-->
-                <li class="photo-container photo">
-                        <img src="images/Gallery/2LiebeStirbtNie/LSNThumbnail.JPG"
-                        onclick="openModal('myModal2');currentSlide(1, 'myModal2')" class="hover-shadow">
-                    <div class= "credit">Liebe Stirbt Nie</div>
-                </li>
-            <!--third thumbnail-->
-                <li class="photo-container photo">
-                        <img src="images/Gallery/3Doris/DorisThumbnail.jpg" onclick="openModal('myModal3');currentSlide(1, 'myModal3')" class="hover-shadow">
-                    <div class= "credit">Doris</div>
-                </li>
-            <!--fourth thumbnail-->
-                <li class="photo-container photo">
-                        <img src="images/Gallery/4Phantom/PhantomThumbnail.JPG" onclick="openModal('myModal4');currentSlide(1, 'myModal4')" class="hover-shadow">
-                    <div class= "credit">Das Phantom der Oper</div>
-                </li>
-            <!--fifth thumbnail-->
-                <li class="photo-container photo">
-                        <img src="images/Gallery/5Julian/JulianThumbnail.JPG" onclick="openModal('myModal5');currentSlide(1, 'myModal5')" class="hover-shadow">
-                    <div class= "credit">Julian</div>
-                </li>
-            <!--sixth thumbnail-->
-                <li class="photo-container photo">
-                        <img src="images/Gallery/6Pirates/Pirates1.jpg" onclick="openModal('myModal6');currentSlide(1, 'myModal6')" class="hover-shadow">    
-                    <div class= "credit">Pirates of Penzance</div>
-                </li>
-            </ul>
-        </div>
-
+                    </li>
+                <!--second thumbnail-->
+                    <li class="photo-container photo">
+                            <img src="images/Gallery/2LiebeStirbtNie/LSNThumbnail.JPG"
+                            onclick="openModal('myModal2');currentSlide(1, 'myModal2')" class="hover-shadow">
+                        <div class= "credit">Liebe Stirbt Nie</div>
+                    </li>
+                <!--third thumbnail-->
+                    <li class="photo-container photo">
+                            <img src="images/Gallery/3Doris/DorisThumbnail.jpg" onclick="openModal('myModal3');currentSlide(1, 'myModal3')" class="hover-shadow">
+                        <div class= "credit">Doris</div>
+                    </li>
+                <!--fourth thumbnail-->
+                    <li class="photo-container photo">
+                            <img src="images/Gallery/4Phantom/PhantomThumbnail.JPG" onclick="openModal('myModal4');currentSlide(1, 'myModal4')" class="hover-shadow">
+                        <div class= "credit">Das Phantom der Oper</div>
+                    </li>
+                <!--fifth thumbnail-->
+                    <li class="photo-container photo">
+                            <img src="images/Gallery/5Julian/JulianThumbnail.JPG" onclick="openModal('myModal5');currentSlide(1, 'myModal5')" class="hover-shadow">
+                        <div class= "credit">Julian</div>
+                    </li>
+                <!--sixth thumbnail-->
+                    <li class="photo-container photo">
+                            <img src="images/Gallery/6Pirates/Pirates1.jpg" onclick="openModal('myModal6');currentSlide(1, 'myModal6')" class="hover-shadow">    
+                        <div class= "credit">Pirates of Penzance</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+<!-- /gallery -->
         <!--end of thumbnails-->
         
         <!--FIRST MODAL-->
@@ -285,6 +285,15 @@ function showSlides(n, whichModal) {
 </script>
         
         <!--END SCRIPTS-->
-        
+        <!-- footer -->
+        <script type="text/javascript" src="js/RachelScript.js"></script>
+        <div id="footer-placeholder">
+        </div>
+        <script>
+            $(function(){
+              $("#footer-placeholder").load("footer.html");
+            });
+        </script>
+		<!-- /footer -->
 	</body>
 </html>

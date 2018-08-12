@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="./css/rachelstyle.css">
         <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/parallax.js-1.5.0/parallax.min.js"></script>
 	</head>
 	<body>
         <script>document.body.className += ' fade-in';</script>
@@ -24,21 +25,54 @@
 <!-- /navigation -->
 	
         <!-- press -->
-                <div class="banner-pic">
-			<img src="./images/landscape_photos/PressPic.jpg" class="container_pic1" alt="image">
+        <div class="banner-pic">
+<!--			<img src="./images/landscape_photos/PressPic.jpg" class="container_pic1"                     alt="image">-->
+            <div class="container_pic1 parallax-window" data-parallax="scroll" data-image-src="./images/landscape_photos/PressPic.jpg" data-position-y=100px></div>
         </div>
-        <div>
-            <p>“The stellar Rachel Anne Moore as Christine is also unforgettable. From the tender duet with Gustave, “Look With Your Heart,” to new duets with The Phantom, “Beneath a Moonless Sky,” and “Once Upon Another Time,” to her solo powerhouse performance of “Love Never Dies,” Moore is flawless.”
-            </p>
-            <a href="http://carolinacurtaincall.com/2018/06/14/reunite-phantom-christine-love-never-dies-peace-center/">carolinacurtaincall.com</a><br/>
-            <p>“Denn eins steht fest, die Besetzung an diesem Abend ist hochkarätig. Rachel Anne Moore, welche bereits im „Phantom der Oper“ in der Neuen Flora als Carlotta das Publikum überzeugen konnte, glänzt schließlich auch in der Rolle der Christine Daaé.”
-            </p>
-            <a href="http://buehnenlichter.de/liebe-stirbt-nie/liebe-stirbt-nie-hamburg-2016/?fdx_switcher=true">buehnenlichter.de</a><br/>
-            <p>“Auch Sopranistin Rachel Anne Moore überzeugt stimmlich, ohne eigene Akzente setzen zu können.”</p><br/>
-            <a href="https://www.google.de/amp/s/amp.welt.de/regionales/hamburg/article147647128/Hamburger-Musical-von-der-Resterampe.html">amp.welt.de</a>
+        <div class="container-fluid">
+            <div class="press-container row my-4">
+                <div class="col-md-4">
+                    <p>“The stellar Rachel Anne Moore as Christine is also unforgettable. From the tender duet with Gustave, “Look With Your Heart,” to new duets with The Phantom, “Beneath a Moonless Sky,” and “Once Upon Another Time,” to her solo powerhouse performance of “Love Never Dies,” Moore is flawless.”
+                    </p>
+                    <a href="http://carolinacurtaincall.com/2018/06/14/reunite-phantom-christine-love-never-dies-peace-center/">carolinacurtaincall.com</a><br/>
+                </div>
+                <div class="col-md-8">
+                    <img src="images/Gallery/2LiebeStirbtNie/LND3.jpg" class="center">
+                </div>
+            </div>
+
+            <div class="press-container row my-2">
+                <div class="col-md-8">
+                    <img src="images/Gallery/2LiebeStirbtNie/LND6.JPG" class="center">
+                </div>
+                <div class="col-md-4">
+                    <p>“Denn eins steht fest, die Besetzung an diesem Abend ist hochkarätig. Rachel Anne Moore, welche bereits im „Phantom der Oper“ in der Neuen Flora als Carlotta das Publikum überzeugen konnte, glänzt schließlich auch in der Rolle der Christine Daaé.”
+                    </p>
+                    <a href="http://buehnenlichter.de/liebe-stirbt-nie/liebe-stirbt-nie-hamburg-2016/?fdx_switcher=true">buehnenlichter.de</a><br/>
+                </div>
+            </div>
+            <div class="press-container row my-2">
+                <div class="col-md-4">
+                    <p>“Auch Sopranistin Rachel Anne Moore überzeugt stimmlich, ohne eigene Akzente setzen zu können.”</p><br/>
+                    <a href="https://www.google.de/amp/s/amp.welt.de/regionales/hamburg/article147647128/Hamburger-Musical-von-der-Resterampe.html">amp.welt.de</a>
+                </div>
+                <div class="col-md-8">
+                    <img src="images/Gallery/2LiebeStirbtNie/LND4.jpg" class="center">
+                </div>
+            </div>         
         </div>
+
 <!-- /press -->
 	
-	   <script type="text/javascript" src="js/RachelScript.js"></script>
+		<!-- footer -->
+        <script type="text/javascript" src="js/RachelScript.js"></script>
+        <div id="footer-placeholder">
+        </div>
+        <script>
+            $(function(){
+              $("#footer-placeholder").load("footer.html");
+            });
+        </script>
+		<!-- /footer -->
 	</body>
 </html>

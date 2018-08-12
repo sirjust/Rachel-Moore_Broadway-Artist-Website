@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="css/bootstrap-4.1.1-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-4.1.1-dist/js/bootstrap.bundle.min.js">
 		<link rel="stylesheet" href="./css/rachelstyle.css">
-
+    </head>
 	<body>
         <script>document.body.className += ' fade-in';</script>
 
@@ -58,8 +58,15 @@
 		<!-- /main content -->
 
 		<!-- footer -->
-		<!-- /footer -->
         <script type="text/javascript" src="js/RachelScript.js"></script>
+        <div id="footer-placeholder">
+        </div>
+        <script>
+            $(function(){
+              $("#footer-placeholder").load("footer.html");
+            });
+        </script>
+		<!-- /footer -->
 	</body>
 <html>
 
