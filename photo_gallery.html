@@ -35,33 +35,33 @@
             <ul class="list-inline flex-container">
             <!--first thumbnail-->
                 <li class="photo-container photo">
-                        <img src="images/Gallery/1Shani/ShaniThumbnail.jpg" onclick="openModal('myModal1');currentSlide(1)" class="hover-shadow">
+                        <img src="images/Gallery/1Shani/ShaniThumbnail.jpg" onclick="openModal('myModal1');currentSlide(1, 'myModal1')" class="hover-shadow">
                         <div class= "credit">Shani</div>
                 </li>
             <!--second thumbnail-->
                 <li class="photo-container photo">
                         <img src="images/Gallery/2LiebeStirbtNie/LSNThumbnail.JPG"
-                        onclick="openModal('myModal2');currentSlide(1)" class="hover-shadow">
+                        onclick="openModal('myModal2');currentSlide(1, 'myModal2')" class="hover-shadow">
                     <div class= "credit">Liebe Stirbt Nie</div>
                 </li>
             <!--third thumbnail-->
-                <li class="photo-container photo" data-toggle="modal" data-target="#myModal">
-                        <img src="images/Gallery/3Doris/DorisThumbnail.jpg">
+                <li class="photo-container photo">
+                        <img src="images/Gallery/3Doris/DorisThumbnail.jpg" onclick="openModal('myModal3');currentSlide(1, 'myModal3')" class="hover-shadow">
                     <div class= "credit">Doris</div>
                 </li>
             <!--fourth thumbnail-->
-                <li class="photo-container photo" data-toggle="modal" data-target="#myModal">
-                        <img src="images/Gallery/4Phantom/PhantomThumbnail.JPG">
+                <li class="photo-container photo">
+                        <img src="images/Gallery/4Phantom/PhantomThumbnail.JPG" onclick="openModal('myModal4');currentSlide(1, 'myModal4')" class="hover-shadow">
                     <div class= "credit">Das Phantom der Oper</div>
                 </li>
             <!--fifth thumbnail-->
-                <li class="photo-container photo" data-toggle="modal" data-target="#myModal">
-                        <img src="images/Gallery/5Julian/JulianThumbnail.JPG">
+                <li class="photo-container photo">
+                        <img src="images/Gallery/5Julian/JulianThumbnail.JPG" onclick="openModal('myModal5');currentSlide(1, 'myModal5')" class="hover-shadow">
                     <div class= "credit">Julian</div>
                 </li>
             <!--sixth thumbnail-->
-                <li class="photo-container photo" data-toggle="modal" data-target="#myModal">
-                        <img src="images/Gallery/6Pirates/4432374346_f848fffc6d.jpg">    
+                <li class="photo-container photo">
+                        <img src="images/Gallery/6Pirates/Pirates1.jpg" onclick="openModal('myModal6');currentSlide(1, 'myModal6')" class="hover-shadow">    
                     <div class= "credit">Pirates of Penzance</div>
                 </li>
             </ul>
@@ -88,8 +88,8 @@
         </div>
 
     <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1, 'myModal1')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'myModal1')">&#10095;</a>
 
     <!-- Caption text -->
         <div class="caption-container">
@@ -117,8 +117,8 @@
         </div>
 
     <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1, 'myModal2')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'myModal2')">&#10095;</a>
 
     <!-- Caption text -->
         <div class="caption-container">
@@ -126,7 +126,127 @@
         </div>
     </div>
 </div>
+        
+        <!--THIRD MODAL-->
+<div id="myModal3" class="modal">
+  <span class="close cursor" onclick="closeModal('myModal3')">&times;</span>
+  <div class="modal-content">
 
+        <div class="mySlides">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/Gallery/3Doris/Portraitfoto.jpg" class= "active big-photo">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="" class= "big-photo" placeholder="Doris photo">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="" class= "big-photo" placeholder="Doris photo">
+        </div>
+
+    <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1, 'myModal3')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'myModal3')">&#10095;</a>
+
+    <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption">Doris Tews</p>
+        </div>
+    </div>
+</div>
+        
+        <!--FOURTH MODAL-->
+<div id="myModal4" class="modal">
+  <span class="close cursor" onclick="closeModal('myModal4')">&times;</span>
+  <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/Gallery/4Phantom/Phantom1.JPG" class= "active big-photo">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/Gallery/4Phantom/Phantom2.JPG" class= "big-photo">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/Gallery/4Phantom/Phantom3.jpg" class= "big-photo">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/Gallery/4Phantom/Phantom4.JPG" class= "big-photo">
+        </div>
+
+    <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1, 'myModal4')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'myModal4')">&#10095;</a>
+
+    <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption">Das Phantom der Oper</p>
+        </div>
+    </div>
+</div>
+        
+                <!--FIFTH MODAL-->
+<div id="myModal5" class="modal">
+  <span class="close cursor" onclick="closeModal('myModal5')">&times;</span>
+  <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/Gallery/5Julian/Julian1.JPG" class= "active big-photo">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/Gallery/5Julian/Julian2.JPG" class= "big-photo" placeholder="Doris photo">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/Gallery/5Julian/Julian3.JPG" class= "big-photo" placeholder="Doris photo">
+        </div>
+
+    <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1, 'myModal5')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'myModal5')">&#10095;</a>
+
+    <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption">Julian Freyberg</p>
+        </div>
+    </div>
+</div>
+        
+                <!--SIXTH MODAL-->
+<div id="myModal6" class="modal">
+  <span class="close cursor" onclick="closeModal('myModal6')">&times;</span>
+  <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/Gallery/6Pirates/Pirates1.jpg" class= "active big-photo">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/Gallery/6Pirates/Pirates2.jpg" class= "big-photo">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/Gallery/6Pirates/Pirates3.jpg" class= "big-photo">
+        </div>
+
+    <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1, 'myModal6')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'myModal6')">&#10095;</a>
+
+    <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption">Pirates of Penzance</p>
+        </div>
+    </div>
+</div>
+        
         <!--SCRIPTS-->
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         
@@ -143,16 +263,17 @@ function closeModal(whichModal) {
 var slideIndex = 1;
 showSlides(slideIndex);
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, whichModal) {
+  showSlides(slideIndex += n, whichModal);
 }
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, whichModal) {
+  showSlides(slideIndex = n, whichModal);
 }
-function showSlides(n) {
+function showSlides(n, whichModal) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  //var slides = document.getElementById(whichModal);
+  var slides = $('#' + whichModal).find(".mySlides");
   var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
