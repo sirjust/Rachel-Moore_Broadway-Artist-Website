@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="css/bootstrap-4.1.1-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-4.1.1-dist/js/bootstrap.bundle.min.js">
 		<link rel="stylesheet" href="./css/rachelstyle.css">
-        <script src="js/parallax.js-1.5.0/parallax.min.js"></script>
+        <!--<script src="js/parallax.js-1.5.0/parallax.min.js"></script>-->
 	</head>
 	<body>
         <script>document.body.className += ' fade-in';</script>
@@ -25,20 +25,21 @@
         
         <script>
             $(function(){
-              $("#nav-placeholder").load("nav.html");
+              $("#nav-placeholder").load("helperFiles/nav.html");
             });
         </script>
 <!-- /navigation -->
 	
         <!-- press -->
         <div class="banner-pic">
-<!--			<img src="./images/landscape_photos/PressPic.jpg" class="container_pic1"                     alt="image">-->
-            <div class="container_pic1 parallax-window" data-parallax="scroll" data-image-src="./images/landscape_photos/PressPic.jpg" data-position-y=100px></div>
+			<img src="./images/landscape_photos/PressPic.jpg" class="container_pic1" alt="image">
+<!--            <div class="container_pic1 parallax-window" data-parallax="scroll" data-image-src="./images/landscape_photos/PressPic.jpg" data-position-y=100px></div>-->
         </div>
         <div class="container-fluid">
+            <!-- Review 1-->
             <div class="press-container row my-4">
                 <div class="col-md-4">
-                    <p>“The stellar Rachel Anne Moore as Christine is also unforgettable. From the tender duet with Gustave, “Look With Your Heart,” to new duets with The Phantom, “Beneath a Moonless Sky,” and “Once Upon Another Time,” to her solo powerhouse performance of “Love Never Dies,” Moore is flawless.”
+                    <p class="press-text">“The stellar Rachel Anne Moore as Christine is unforgettable. From the tender duet with Gustave, “Look With Your Heart,” to new duets with The Phantom, “Beneath a Moonless Sky,” and “Once Upon Another Time,” to her solo powerhouse performance of “Love Never Dies,” Moore is flawless.”
                     </p>
                     <a href="http://carolinacurtaincall.com/2018/06/14/reunite-phantom-christine-love-never-dies-peace-center/">carolinacurtaincall.com</a><br/>
                 </div>
@@ -46,26 +47,48 @@
                     <img src="images/Gallery/2LiebeStirbtNie/LND3.jpg" class="center">
                 </div>
             </div>
-
+            <!-- Review 2-->
             <div class="press-container row my-4">
                 <div class="col-md-8">
-                    <img src="images/Gallery/2LiebeStirbtNie/LND6.JPG" class="center">
+                    <img src="images/Gallery/4Phantom/Phantom4.JPG" class="center">
                 </div>
                 <div class="col-md-4">
-                    <p>“Denn eins steht fest, die Besetzung an diesem Abend ist hochkarätig. Rachel Anne Moore, welche bereits im „Phantom der Oper“ in der Neuen Flora als Carlotta das Publikum überzeugen konnte, glänzt schließlich auch in der Rolle der Christine Daaé.”
+                    <p class="press-text">"This much is certain, the cast is world-class. Rachel Anne Moore, who just recently won the audience's approval as Carlotta in "Phantom of the Opera" at the Neue Flora, also dazzles in the role of Christine Daaé,"
                     </p>
                     <a href="http://buehnenlichter.de/liebe-stirbt-nie/liebe-stirbt-nie-hamburg-2016/?fdx_switcher=true">buehnenlichter.de</a><br/>
                 </div>
             </div>
+            <!-- Review 3-->
             <div class="press-container row my-4">
                 <div class="col-md-4">
-                    <p>“Auch Sopranistin Rachel Anne Moore überzeugt stimmlich, ohne eigene Akzente setzen zu können.”</p><br/>
+                    <p class="press-text">"Rachel Anne Moore was also vocally convincing, and without any perceivable accent."</p><br/>
                     <a href="https://www.google.de/amp/s/amp.welt.de/regionales/hamburg/article147647128/Hamburger-Musical-von-der-Resterampe.html">amp.welt.de</a>
                 </div>
                 <div class="col-md-8">
                     <img src="images/Gallery/2LiebeStirbtNie/LND4.jpg" class="center">
                 </div>
-            </div>         
+            </div>   
+            <!-- Review 4-->
+            <div class="press-container row my-4">
+                <div class="col-md-8">
+                    <img src="materials/konz_konzert.png" class="center">
+                </div>
+                <div class="col-md-4">
+                    <p class="press-text">“Rachel Anne Moore stands at the cusp of a brilliant career. Her dazzling appearance and fantastic voice impressed the 400 audience members. With captivating charm and a natural stage presence she enchanted the audience. Her bell-like Traviata entranced...”
+                    </p>
+                    <a href="">Trierischer Volksfreund</a><br/>
+                </div>
+            </div>
+            <!-- Review 5-->
+            <div class="press-container row my-4">
+                <div class="col-md-4">
+                    <p class="press-text">“Rachel Anne Moore is phenomenal! ...Musical fans will certainly be overjoyed to hear [her] excellent rendition of the title song.”</p><br/>
+                    <a href="https://www.mopo.de/hamburg/-liebe-stirbt-nie--hamburg--premiere-mit-phantom-schmerz-23043112">www.mopo.de</a>
+                </div>
+                <div class="col-md-8">
+                    <img src="images/press/lsn_arrival1.jpg" class="center">
+                </div>
+            </div>   
         </div>
 
 <!-- /press -->
@@ -76,7 +99,7 @@
         </div>
         <script>
             $(function(){
-              $("#footer-placeholder").load("footer.html");
+              $("#footer-placeholder").load("/helperFiles/footer.html");
             });
         </script>
 		<!-- /footer -->
