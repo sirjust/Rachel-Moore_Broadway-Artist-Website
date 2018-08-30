@@ -99,12 +99,14 @@ ul li.nav-item:hover {
         font-size: 22px;
     }
 }
+
 .language {
     margin-right: 0;
+    color: #7e8a9e;
 }
 
 .nav-item {
-    color: blue;
+    color: #7e8a9e;
 }
 
 ul {
@@ -115,33 +117,35 @@ ul {
 ==============
 */
 h1 {
-	font-family: Georgia, sans-serif;
-	font-style: italic;
-	color: #4242f4;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-        0px 8px 13px rgba(0,0,0,0.1),
-        0px 18px 23px rgba(0,0,0,0.1);
+	font-family: 'Playfair Display', sans-serif;
+	color: #1d407a;
 }
 
 h2 {
 	text-align: center;
-    font-family: Georgia, sans-serif;
-	color: #4242f4;
+    font-family: 'Playfair Display', sans-serif;
+	color: #0f213f;
 	text-shadow: 2px black;
 }
 
 h3 {
 	text-align: center;
-    font-family: Georgia, sans-serif;
-	color: #4242f4;
+    font-family: 'Playfair Display', sans-serif;
+	color: #0f213f;
 	text-shadow: 2px black;
+}
+
+h4 {
+    font-family: 'Playfair Display', sans-serif;
+	color: #0f213f;
 }
 
 .press-text {
     font-size: 28px;
     text-align: center;
-    font-family: Georgia, sans-serif;
-	color: navy;
+    font-style: italic;
+    font-family: 'Playfair Display', sans-serif;
+	color: #0f213f;
 	text-shadow: 2px black;
 }
 
@@ -149,6 +153,14 @@ h3 {
     font-size: 16px;
     color: #7e8a9e;
     text-align: center;
+}
+
+.peri-text {
+    color: #7e8a9e;
+}
+
+.peri-text:hover{
+    color: #7e8a9e;
 }
 /* END TEXT STYLES
 ==================
@@ -173,11 +185,10 @@ h3 {
 	display: -webkit-flex;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 20px;
-	border-radius: 8px;
-	margin: 0px auto;
-	background-color: rgba(100,65,0,0.3);
-	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+	padding: 15px;
+	margin: 25px auto;
+/*	background-color: #d2d5db;*/
+    background-image: linear-gradient(to bottom right, #7e8a9e, white, #7e8a9e)
 }
 
 .thumbnail-list {
@@ -189,10 +200,9 @@ h3 {
 	line-height: 0;
 	margin-bottom: 2em;
 	overflow: hidden;
-	border-radius: 8px;
 	padding: 1px;
 	border: 1px solid #021a40;
-	background-color: #000;
+	background-color: #010c21;
 	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.7);
 }
 
@@ -216,9 +226,10 @@ h3 {
 
 .credit {
     position: relative;
-    bottom: 24px;
+    bottom: 16px;
     font-size: 14px;
-    font-weight: bold;
+    font-style: italic;
+    font-family: 'Cormorant', sans-serif;
     color: #fff;
     text-shadow: 0 0 4px black;
 }
@@ -358,7 +369,6 @@ VIDEO STYLE
 	line-height: 0;
 	margin-bottom: 2em;
 	overflow: hidden;
-	border-radius: 8px;
 	padding: 1px;
 	border: 1px solid #021a40;
 	background-color: #000;
