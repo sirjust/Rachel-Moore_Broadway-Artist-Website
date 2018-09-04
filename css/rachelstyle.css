@@ -34,7 +34,11 @@ body.fade-in {
 .icon-link {
     width: 40px;
     height: 40px;
-    opacity: .2;
+}
+
+.icon-link:hover {
+    transition: transform .5s;
+    transform: scale(1.1);
 }
 
 .nav-top {
@@ -46,6 +50,7 @@ ul li.nav-item:hover {
     transition: transform .5s;
     transform: scale(1.1);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .language-container {
@@ -155,6 +160,29 @@ h4 {
     font-family: 'Playfair Display', sans-serif;
 	color: #0f213f;
 	text-shadow: 2px black;
+}
+
+@media only screen and (max-width: 1000px){
+    h1 {font-size: 32px;}
+    h2 {font-size: 28px;}
+    h3 {font-size: 24px;}
+    h4 {font-size: 18px;}
+    .press-text {font-size: 24px;}
+}
+    
+@media only screen and (max-width: 810px) {
+    h1 {font-size: 28px;}
+    h2 {font-size: 24px;}
+    h3 {font-size: 18px;}
+    h4 {font-size: 14px;}
+    .press-text {font-size: 18px;}
+}
+    
+    
+@media only screen and (max-width: 450px) {
+    h1 {font-size: 24px;}
+    h2 {font-size: 18px;}
+    h3 {font-size: 14px;}
 }
 
 .numbertext {
@@ -445,5 +473,4 @@ FOOTER STYLE
 .social-footer .icon-link {
     width: 25px;
     height: 25px;
-    opacity: .2;
 }
