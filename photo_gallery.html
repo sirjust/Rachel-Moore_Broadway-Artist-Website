@@ -88,33 +88,45 @@
 
         <div class="mySlides">
           <div class="numbertext">Photo: Shani Hadjan</div>
-          <img src="images/Gallery/1Shani/Shani1.jpg" class= "active big-photo">
+            <div class="big-photo-container">
+                <img src="images/Gallery/1Shani/Shani1.jpg" class= "active big-photo">
+            </div>
         </div>
         <div class="mySlides">
           <div class="numbertext">Photo: Shani Hadjan</div>
-          <img src="images/Gallery/1Shani/Shani2.jpg" class= "big-photo">
+            <div class="big-photo-container">
+                <img src="images/Gallery/1Shani/Shani2.jpg" class= "big-photo">
+            </div>
         </div>
         <div class="mySlides">
           <div class="numbertext">Photo: Shani Hadjan</div>
-          <img src="images/Gallery/1Shani/Shani3.jpg" class= "big-photo">
+            <div class="big-photo-container">
+                <img src="images/Gallery/1Shani/Shani3.jpg" class= "big-photo">
+            </div>
         </div>
         <div class="mySlides">
           <div class="numbertext">Photo: Shani Hadjan</div>
-          <img src="images/Gallery/1Shani/Shani4.jpg" class= "big-photo">
+          <div class="big-photo-container">
+                <img src="images/Gallery/1Shani/Shani4.jpg" class= "big-photo">
+            </div>
         </div>
         <div class="mySlides">
           <div class="numbertext">Photo: Shani Hadjan</div>
-          <img src="images/Gallery/1Shani/Shani5.jpg" class= "big-photo">
+          <div class="big-photo-container">
+                <img src="images/Gallery/1Shani/Shani5.jpg" class= "big-photo">
+            </div>
         </div>
         <div class="mySlides">
           <div class="numbertext">Photo: Shani Hadjan</div>
-          <img src="images/Gallery/1Shani/Shani6.jpg" class= "big-photo">
+          <div class="big-photo-container">
+                <img src="images/Gallery/1Shani/Shani6.jpg" class= "big-photo">
+            </div>
         </div>
 
     <!-- Next/previous controls -->
+    </div>
         <a class="prev" onclick="plusSlides(-1, 'myModal1')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'myModal1')">&#10095;</a>
-    </div>
 </div>
         
                 <!--SECOND MODAL-->
@@ -286,9 +298,9 @@
         </div>
 
     <!-- Next/previous controls -->
+    </div>
         <a class="prev" onclick="plusSlides(-1, 'myModal4')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'myModal4')">&#10095;</a>
-    </div>
 </div>
         
                 <!--FIFTH MODAL-->
@@ -321,9 +333,9 @@
         </div>
 
     <!-- Next/previous controls -->
+    </div>
         <a class="prev" onclick="plusSlides(-1, 'myModal5')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'myModal5')">&#10095;</a>
-    </div>
 </div>
         
                 <!--SIXTH MODAL-->
@@ -373,9 +385,9 @@
         </div>
 
     <!-- Next/previous controls -->
+    </div>
         <a class="prev" onclick="plusSlides(-1, 'myModal6')">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 'myModal6')">&#10095;</a>
-    </div>
 </div>
                 <!--SEVENTH MODAL-->
 <div id="myModal7" class="modal">
@@ -418,23 +430,24 @@
           <div class="numbertext">Rebecca Fay</div>
           <img src="images/Gallery/7Becca/Becca9.jpeg" class= "big-photo">
         </div>
-
     <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1, 'myModal7')">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 'myModal7')">&#10095;</a>
+    </div>
+    <a class="prev" onclick="plusSlides(-1, 'myModal7')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'myModal7')">&#10095;</a>
 </div>
-        
         <!--SCRIPTS-->
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         
         <script>
 // Open the Modal
 function openModal(whichModal) {
-  document.getElementById(whichModal).style.display = "block";
+    $("#" + whichModal).fadeIn('slow');
+  //document.getElementById(whichModal).style.display = "block";
 }
 // Close the Modal
 function closeModal(whichModal) {
-  document.getElementById(whichModal).style.display = "none";
+    $("#" + whichModal).fadeOut('slow');
+  //document.getElementById(whichModal).style.display = "none";
 }
 
 var slideIndex = 1;
@@ -464,11 +477,11 @@ function showSlides(n, whichModal) {
         <!--END SCRIPTS-->
         <!-- footer -->
         <script type="text/javascript" src="js/RachelScript.js"></script>
-        <div id="footer-placeholder">
-        </div>
+            <div id="footer-placeholder">
+            </div>
         <script>
             $(function(){
-              $("#footer-placeholder").load("/helperFiles/footer.html");
+              $("#footer-placeholder").load("helperFiles/footer.html");
             });
         </script>
 		<!-- /footer -->

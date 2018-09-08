@@ -1,10 +1,21 @@
+<script>
+    function smoothscroll(){
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if (currentScroll > 0) {
+         window.requestAnimationFrame(smoothscroll);
+         window.scrollTo (0,currentScroll - (currentScroll/3));
+    }
+};
+</script>
+
+
 <footer class="social-footer">
     <div class="container-fluid footer-elements">
         <div class="d-flex justify-content-around">
-            <a href="#">Back to Top</a>
+            <button onclick="smoothscroll()">Back to Top</button>
             &copy; Justin Moore 2018
             <a href="https://www.facebook.com/sopranorachelannemoore/"><img class= "icon-link" src="./images/facebook.jpg" alt=""></a></li>
-            <a href="https://www.instagram.com/rachelannemooreofficial/?hl=en"><img class= "icon-link" src="./images/69366.png" alt=""></a></li>
+            <a href="https://www.instagram.com/rachelannemooreofficial/?hl=en"><img class= "icon-link" src="./images/insta_peri.jpeg" alt=""></a></li>
         </div>
     </div>
 </footer>
