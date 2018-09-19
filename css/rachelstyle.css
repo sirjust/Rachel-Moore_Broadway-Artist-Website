@@ -485,6 +485,24 @@ CONTACT STYLE
     height: 500px;
     border-style: solid;
     border-width: 1px;
+    background-image: linear-gradient(to bottom right, #7e8a9e, white, #7e8a9e)
+}
+
+.logo-container {
+	text-align: center;
+	margin: 15px auto;
+	height: auto;
+}
+
+.logo-container img {
+    object-fit: contain;
+    width: 200px;
+}
+
+@media only screen and (max-width: 700px){
+    .contact-container{
+        height: 400px;
+    }
 }
 
 .contactPic {
