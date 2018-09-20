@@ -488,6 +488,12 @@ CONTACT STYLE
     background-image: linear-gradient(to bottom right, #7e8a9e, white, #7e8a9e)
 }
 
+@media only screen and (max-width: 700px){
+    .contact-container{
+        height: 400px;
+    }
+}
+
 .logo-container {
 	text-align: center;
 	margin: 15px auto;
@@ -497,12 +503,6 @@ CONTACT STYLE
 .logo-container img {
     object-fit: contain;
     width: 200px;
-}
-
-@media only screen and (max-width: 700px){
-    .contact-container{
-        height: 400px;
-    }
 }
 
 .contactPic {
