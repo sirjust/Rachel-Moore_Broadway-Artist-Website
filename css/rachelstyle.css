@@ -28,6 +28,17 @@ body.fade-in {
     width: auto;
 }
 
+.banner-pic {
+    width: 90%;
+    height: auto;
+}
+
+@media only and (max-width: 800px){
+    .banner-pic {
+        width: 100%;
+    }
+}
+
 /* NAVIGATION
 =============
 */
