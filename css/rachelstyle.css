@@ -39,6 +39,20 @@ body.fade-in {
     }
 }
 
+li a {
+    color: #7e8a9e;
+}
+
+li a:hover {
+/*
+    transition doesn't work on inline elements
+    transition: transform .5s;
+    transform: scale(1.1);
+*/
+    font-weight: bold;
+    color: #7e8a9e;
+}
+
 /* NAVIGATION
 =============
 */
@@ -260,6 +274,14 @@ h4 {
 =======================
 */
 
+.little-pic {
+    display: block;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 300px;
+}
+
 .flex-container {
 	display: -webkit-flex;
 	display: flex;
@@ -304,9 +326,10 @@ h4 {
 }
 
 .credit {
-    position: relative;
-    bottom: 16px;
-    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
     font-style: italic;
     font-family: 'Cormorant', sans-serif;
     color: #fff;
