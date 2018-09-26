@@ -33,6 +33,11 @@ body.fade-in {
     height: auto;
 }
 
+.banner-credit {
+    color: #1d407a;
+    text-align: right;
+}
+
 @media only and (max-width: 800px){
     .banner-pic {
         width: 100%;
@@ -52,6 +57,7 @@ li a:hover {
     font-weight: bold;
     color: #7e8a9e;
 }
+
 
 /* NAVIGATION
 =============
@@ -160,6 +166,12 @@ ul li.nav-item .active {
 
 ul {
     list-style: none;
+}
+
+.german-pic {
+    display: block;
+    margin: auto;
+    width: 300px;
 }
 
 /* TEXT STYLES
