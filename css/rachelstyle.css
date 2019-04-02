@@ -527,19 +527,25 @@ VIDEO STYLE
 CONTACT STYLE
 */
 
-.contact-container{
-    height: 500px;
+.agency-container{
+    height: 200px;
     border-style: solid;
     border-width: 1px;
     background-image: linear-gradient(to bottom right, #7e8a9e, white, #7e8a9e)
 }
 
-@media only screen and (max-width: 700px){
+.contact-container{
+    height: 300px;
+    border-style: solid;
+    border-width: 1px;
+    background-image: linear-gradient(to bottom right, #7e8a9e, white, #7e8a9e)
+}
+
+@media only screen and (max-width: 1220px){
     .contact-container{
         height: 400px;
     }
 }
-
 .logo-container {
 	text-align: center;
 	margin: 15px auto;
