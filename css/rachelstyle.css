@@ -534,6 +534,13 @@ CONTACT STYLE
     background-image: linear-gradient(to bottom right, #7e8a9e, white, #7e8a9e)
 }
 
+.lesson-container{
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    background-image: linear-gradient(to bottom right, #7e8a9e, white, #7e8a9e)
+}
+
 .contact-container{
     height: 300px;
     border-style: solid;
