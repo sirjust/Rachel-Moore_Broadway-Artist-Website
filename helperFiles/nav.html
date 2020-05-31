@@ -1,34 +1,11 @@
-<script>$(document).on("click", "a", function () {
-    var newUrl = $(this).attr("href");
-    if (!newUrl || newUrl[0] === "#") {
-        location.hash = newUrl;
-        return;
-    }
-    $("html").fadeOut(700, function () {
-        location = newUrl;
-    });
-    return false;
-});
-</script>
-
-<script>
-    $(function(){
-        $('a').each(function(){
-            if ($(this).prop('href') == window.location.href) {
-                $(this).addClass('active'); $(this).parents('li').addClass('active');
-            }
-        });
-    });
-</script>
-
 <div class="container-fluid nav-top">
     <div class="row">
         <div class= "col-lg-2 media-links">
             <div class="ml-3 media-stuff">
-                <a class="navbar-brand" href="https://www.facebook.com/sopranorachelannemoore/">
+                <a class="navbar-brand" href="https://www.facebook.com/rachelannemooreofficial/" target="_blank">
                     <img class= "icon-link" src="./images/facebook.jpg" alt="">
                 </a>
-                <a class="navbar-brand" href="https://www.instagram.com/rachelannemooreofficial/?hl=en">
+                <a class="navbar-brand" href="https://www.instagram.com/rachelannemooreofficial/?hl=en" target="_blank">
                     <img class= "icon-link" src="./images/insta_peri.jpeg" alt="">
                 </a>
             </div>
@@ -38,21 +15,7 @@
                 <h1>RACHEL ANNE MOORE</h1>
             </div>
         </div>
-        <div class="col-lg-2 language-container">
-            <div>
-				<!--
-                <ul class="row">
-                    <li class="language">
-                        <a href="index.html">EN</a>
-                    </li>
-                    <li class="language">&nbsp;|&nbsp;</li>
-                    <li class="language">
-                        <a href="german.html">DE</a>
-                    </li>
-                </ul>
-				-->
-            </div>
-        </div>
+        <div class="col-lg-2 language-container"></div>
     </div>
 </div>
 
@@ -63,7 +26,7 @@
     <div class="collapse navbar-collapse col-sm-12" id="navbarNav">
         <ul class="navbar-nav w-100 nav-justified">
             <li class="nav-item">
-                <a class="nav-link page-transition peri-text" href=index.html>HOME</a>
+                <a class="nav-link page-transition peri-text" href="index.html">HOME</a>
             </li>
             <li class="nav-item">          
                 <a class="nav-link page-transition peri-text" href="about.html">ABOUT</a>
